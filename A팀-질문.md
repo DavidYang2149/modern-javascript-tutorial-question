@@ -22,3 +22,42 @@ No Questions
 
 #### 8.2 함수의 prototype 프로퍼티
 - constructor를 바꾸면 prototype이 덮어씌워지나요? 반대로도 될까요?
+
+## 9. 클래스
+
+#### 9.4 private, protected 프로퍼티와 메서드
+- protected와 private을 활용한 캡슐화의 이점과 단점을 말해보세요. 
+- 캡슐화를 사용해서 얻었던 이점을 얻은 경험이 있을까요?
+
+#### 9.6 'instanceof'로 클래스 확인하기
+- typeof랑 instanceof의 차이점은 무엇일까요?
+- instanceof를 실무에서 사용한적이 있으신가요?
+- prototype에 새로운 property를 추가하고 instanceof(isPrototypeOf)를 확인하면, constructor와의 관계가 유지될까요?
+```
+function Rabbit() {}
+let rabbit = new Rabbit();
+Rabbit.prototype.run = "fast";
+
+alert( rabbit instanceof Rabbit );
+```
+
+
+## 10. 에러 핸들링
+
+#### 10.2 커스텀 에러와 에러 확장
+- 커스텀에러가 무엇인가요?
+- 커스텀에러를 예외 감싸기 형식으로 만드는 이유는 무엇일까요?
+
+## 11. 프라미스와 async, await
+
+#### 11.1 콜백
+- 콜백 함수의 문제점은 무엇인가요?
+- 문제점을 해결하려면 어떤 방법이 있을까요?
+
+#### 11.2 프라미스
+- finally 를 사용해서 좋아지는 케이스를 설명해주세요
+- Promise.all 은 병렬적인 작업을 하나요 동시성 작업을 할까요?
+
+#### 11.6 프로미스화
+- 프로미스화를 적용하기 적절한, 적절하지 않은 경우를 하나씩 설명해주세요
+
